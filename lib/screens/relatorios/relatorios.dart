@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 
-class Pedidos extends StatefulWidget {
-  const Pedidos({super.key});
+class Relatorios extends StatefulWidget {
+  const Relatorios({super.key});
 
   @override
-  State<Pedidos> createState() => _PedidosState();
+  State<Relatorios> createState() => _RelatoriosState();
 }
 
-class _PedidosState extends State<Pedidos> {
+class _RelatoriosState extends State<Relatorios> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
        appBar: AppBar(
       title: const Text(
-        "Pedidos",
+        "Relatórios",
         style: TextStyle(color: Colors.white),
       ),
       backgroundColor: Colors.blue,
