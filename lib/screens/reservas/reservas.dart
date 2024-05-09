@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:restaurante_bom_garfo/components/buttons/filter_reservation_button.dart';
 import 'package:restaurante_bom_garfo/components/constants.dart';
+import 'package:restaurante_bom_garfo/screens/reservas/reservas_form.dart';
 
 class Reservas extends StatefulWidget {
   const Reservas({Key? key}) : super(key: key);
@@ -81,6 +82,17 @@ class _ReservasState extends State<Reservas> {
             ],
           ),
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add),
+        backgroundColor: Colors.blue,
+        foregroundColor: Colors.white,
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => ReservaForm()),
+          );
+        },
       ),
     );
   }
